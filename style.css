@@ -69,6 +69,6 @@ p.caption {
 .main-content h2,
 .main-content h3,
 .main-content h4 {
-  padding-top: 2.4em;
-  padding-bottom: 1em;
+  padding-top: 2.4em !important;
+  padding-bottom: 1em !important;
 }
