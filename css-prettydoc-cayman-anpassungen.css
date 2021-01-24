@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"),
+       local("OpenSans-Regular"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-regular.woff") format("woff"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"),
+       local("OpenSans-Italic"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-italic.woff") format("woff"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"),
+       local("OpenSans-Bold"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-700.woff") format("woff"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"),
+       local("OpenSans-BoldItalic"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-700italic.woff") format("woff"),
+       url("open-sans-v18/open-sans-v18-latin-ext_latin-700italic.woff2") format("woff2");
+}
+
+div.sourceCode {
+  margin-bottom: 0;
+}
+div.sourceCode + pre {
+  margin-bottom: 2em;
+  background-color: white;
+}
+div.sourceCode + pre::before {
+  content: "R console output:";
+  display: block;
+  font-style: italic;
+  text-decoration: underline;
+  padding-bottom: 0.2em;
+}
+div.references .csl-entry {
+  padding-left: 3em;
+  text-indent: -3em;
+  margin-bottom: 0.5em;
+}
+.main-content > div.footnotes > hr {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  height: 2px;
+}
+p.caption {
+  font-size: 0.9em;
+  font-style: italic;
+  padding: 0.2em 2em;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4 {
+  padding-top: 2.4em;
+  padding-bottom: 1em;
+}
