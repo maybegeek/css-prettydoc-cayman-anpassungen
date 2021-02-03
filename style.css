@@ -1,3 +1,11 @@
+/*
+- needs changes for prettydoc > 0.4.1
+- https://github.com/yixuan/prettydoc/issues/25
+*/
+/*
+- use *.woff2 instead of *.woff
+- include italic and bold italic
+*/
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -30,7 +38,9 @@
        local("OpenSans-BoldItalic"),
        url("open-sans-v18/open-sans-v18-latin-ext_latin-700italic.woff2") format("woff2");
 }
-
+/*
+- sourceCode and message/warning/error
+*/
 div.sourceCode {
   margin-bottom: 0;
 }
@@ -46,6 +56,10 @@ div.sourceCode ~ pre::before {
   text-decoration: underline;
   padding-bottom: 0.3em;
 }
+/*
+- citation/bibliography
+- opinionated
+*/
 div.references .csl-entry {
   padding-left: 3em;
   text-indent: -3em;
@@ -56,12 +70,17 @@ div.references .csl-entry {
   margin-bottom: 1em;
   height: 2px;
 }
+/*
+- image caption
+*/
 p.caption {
   font-size: 0.9em;
   font-style: italic;
   padding: 0.2em 2em;
 }
-
+/*
+- heading with more space
+*/
 .main-content h1,
 .main-content h2,
 .main-content h3,
