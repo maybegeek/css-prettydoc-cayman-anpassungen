@@ -3,6 +3,9 @@
   counter-reset: tocBoxCounterLi3;
   counter-reset: tocBoxCounterLi4;
 }
+.toc .toc-box ul {
+  list-style-type: none;
+}
 .toc .toc-box ul > li {
   counter-increment: tocBoxCounterLi1;
 }
