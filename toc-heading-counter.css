@@ -1,0 +1,52 @@
+.toc .toc-box {
+  counter-reset: tocBoxCounterLi1;
+  counter-reset: tocBoxCounterLi3;
+  counter-reset: tocBoxCounterLi4;
+}
+.toc .toc-box ul > li {
+  counter-increment: tocBoxCounterLi1;
+}
+.toc .toc-box ul > li::before {
+  content: counter(tocBoxCounterLi1);
+  padding-right: 0.6em;
+}
+.toc .toc-box ul > li > ul > li {
+  counter-increment: tocBoxCounterLi3;
+}
+.toc .toc-box ul > li > ul > li::before {
+  content: counter(tocBoxCounterLi1) "." counter(tocBoxCounterLi3);
+  padding-right: 0.6em;
+}
+.toc .toc-box ul > li > ul > li > ul > li {
+  counter-increment: tocBoxCounterLi4;
+}
+.toc .toc-box ul > li > ul > li > ul > li::before {
+  content: counter(tocBoxCounterLi1) "." counter(tocBoxCounterLi3) "." counter(tocBoxCounterLi4);
+  padding-right: 0.6em;
+}
+.main-content {
+  counter-reset: headingCounterH2;
+  counter-reset: headingCounterH3;
+  counter-reset: headingCounterH4;
+}
+.main-content .section.level2 h2 {
+  counter-increment: headingCounterH2;
+}
+.main-content .section.level2 h2::before {
+  content: counter(headingCounterH2);
+  padding-right: 0.6em;
+}
+.main-content .section.level3 h3 {
+  counter-increment: headingCounterH3;
+}
+.main-content .section.level3 h3::before {
+  content: counter(headingCounterH2) "." counter(headingCounterH3);
+  padding-right: 0.6em;
+}
+.main-content .section.level4 h4 {
+  counter-increment: headingCounterH4;
+}
+.main-content .section.level4 h4::before {
+  content: counter(headingCounterH2) "." counter(headingCounterH3) "." counter(headingCounterH4);
+  padding-right: 0.6em;
+}
