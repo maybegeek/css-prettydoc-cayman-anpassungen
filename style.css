@@ -12,7 +12,7 @@
   font-weight: 400;
   src: local("Open Sans Regular"),
        local("OpenSans-Regular"),
-       url("open-sans-v18/open-sans-v18-latin-ext_latin-regular.woff2") format("woff2");
+       url("https://maybegeek.github.io/css-prettydoc-cayman-anpassungen/open-sans-v18/open-sans-v18-latin-ext_latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Open Sans";
@@ -20,7 +20,7 @@
   font-weight: 400;
   src: local("Open Sans Italic"),
        local("OpenSans-Italic"),
-       url("open-sans-v18/open-sans-v18-latin-ext_latin-italic.woff2") format("woff2");
+       url("https://maybegeek.github.io/css-prettydoc-cayman-anpassungen/open-sans-v18/open-sans-v18-latin-ext_latin-italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Open Sans";
@@ -28,7 +28,7 @@
   font-weight: 700;
   src: local("Open Sans Bold"),
        local("OpenSans-Bold"),
-       url("open-sans-v18/open-sans-v18-latin-ext_latin-700.woff2") format("woff2");
+       url("https://maybegeek.github.io/css-prettydoc-cayman-anpassungen/open-sans-v18/open-sans-v18-latin-ext_latin-700.woff2") format("woff2");
 }
 @font-face {
   font-family: "Open Sans";
@@ -36,7 +36,7 @@
   font-weight: 700;
   src: local("Open Sans Bold Italic"),
        local("OpenSans-BoldItalic"),
-       url("open-sans-v18/open-sans-v18-latin-ext_latin-700italic.woff2") format("woff2");
+       url("https://maybegeek.github.io/css-prettydoc-cayman-anpassungen/open-sans-v18/open-sans-v18-latin-ext_latin-700italic.woff2") format("woff2");
 }
 /*
 - sourceCode and message/warning/error
