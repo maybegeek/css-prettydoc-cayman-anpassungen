@@ -2,6 +2,7 @@
   counter-reset: tocBoxCounterLi1;
   counter-reset: tocBoxCounterLi3;
   counter-reset: tocBoxCounterLi4;
+  padding: 4em 3em;
 }
 .toc .toc-box ul {
   list-style-type: none;
@@ -11,14 +12,19 @@
 }
 .toc .toc-box ul > li::before {
   content: counter(tocBoxCounterLi1);
-  padding-right: 0.6em;
+  padding-right: 0.8em;
+}
+.toc .toc-box > ul > li > ul {
+  padding-left: 1em;
 }
 .toc .toc-box ul > li > ul > li {
   counter-increment: tocBoxCounterLi3;
 }
 .toc .toc-box ul > li > ul > li::before {
   content: counter(tocBoxCounterLi1) "." counter(tocBoxCounterLi3);
-  padding-right: 0.6em;
+  padding-right: 0.8em;
+  width: 2.2em;
+  display: inline-block;
 }
 .toc .toc-box ul > li > ul > li > ul > li {
   counter-increment: tocBoxCounterLi4;
@@ -30,7 +36,6 @@
 .main-content {
   counter-reset: headingCounterH2;
   counter-reset: headingCounterH3;
-  counter-reset: headingCounterH4;
 }
 .main-content .section.level2 h2 {
   counter-increment: headingCounterH2;
