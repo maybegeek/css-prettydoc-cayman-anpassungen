@@ -7,15 +7,19 @@
 .toc .toc-box ul {
   list-style-type: none;
 }
-.toc .toc-box ul > li {
+.toc .toc-box > ul > li {
   counter-increment: tocBoxCounterLi1;
 }
-.toc .toc-box ul > li::before {
+.toc .toc-box > ul > li > a {
+  font-size: 1.2em;
+}
+.toc .toc-box > ul > li::before {
   content: counter(tocBoxCounterLi1);
   padding-right: 0.8em;
+  font-size: 1.2em;
 }
 .toc .toc-box > ul > li > ul {
-  padding-left: 1em;
+  padding-left: 1.6em;
 }
 .toc .toc-box ul > li > ul > li {
   counter-increment: tocBoxCounterLi3;
