@@ -41,21 +41,21 @@
   counter-reset: headingCounterH2;
   counter-reset: headingCounterH3;
 }
-.main-content .section.level2 h2 {
+.main-content .section.level2 {
   counter-increment: headingCounterH2;
 }
 .main-content .section.level2 h2::before {
   content: counter(headingCounterH2);
   padding-right: 0.6em;
 }
-.main-content .section.level3 h3 {
+.main-content .section.level3 {
   counter-increment: headingCounterH3;
 }
 .main-content .section.level3 h3::before {
   content: counter(headingCounterH2) "." counter(headingCounterH3);
   padding-right: 0.6em;
 }
-.main-content .section.level4 h4 {
+.main-content .section.level4 {
   counter-increment: headingCounterH4;
 }
 .main-content .section.level4 h4::before {
