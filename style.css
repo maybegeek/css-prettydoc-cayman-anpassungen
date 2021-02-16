@@ -38,6 +38,9 @@
        local("OpenSans-BoldItalic"),
        url("https://maybegeek.github.io/css-prettydoc-cayman-anpassungen/open-sans-v18/open-sans-v18-latin-ext_latin-700italic.woff2") format("woff2");
 }
+html body p {
+  font-size: 1.1em;
+}
 /*
 - sourceCode and message/warning/error
 */
