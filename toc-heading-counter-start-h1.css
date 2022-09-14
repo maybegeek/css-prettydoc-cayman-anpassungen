@@ -1,0 +1,84 @@
+.toc .toc-box {
+  counter-reset: tocBoxCounterLi1;
+  counter-reset: tocBoxCounterLi2;
+  counter-reset: tocBoxCounterLi3;
+  counter-reset: tocBoxCounterLi4;
+  padding: 4em 3em;
+}
+.toc .toc-box ul {
+  list-style-type: none;
+}
+.toc .toc-box > ul > li {
+  counter-increment: tocBoxCounterLi1;
+}
+.toc .toc-box > ul > li > a {
+  font-size: 1.2em;
+}
+.toc .toc-box > ul > li::before {
+  content: counter(tocBoxCounterLi1);
+  padding-right: 0.8em;
+  font-size: 1.2em;
+}
+.toc .toc-box > ul > li > ul {
+  padding-left: 1.6em;
+}
+.toc .toc-box ul > li > ul > li {
+  counter-increment: tocBoxCounterLi2;
+}
+.toc .toc-box ul > li > ul > li::before {
+  content: counter(tocBoxCounterLi1) "." counter(tocBoxCounterLi2);
+  padding-right: 0.8em;
+  width: 2.2em;
+  display: inline-block;
+}
+.toc .toc-box ul > li > ul > li > ul > li {
+  counter-increment: tocBoxCounterLi3;
+}
+.toc .toc-box ul > li > ul > li > ul > li::before {
+  content: counter(tocBoxCounterLi1) "." counter(tocBoxCounterLi2) "." counter(tocBoxCounterLi3);
+  padding-right: 0.6em;
+}
+.main-content {
+  counter-reset: headingCounterH1;
+  counter-reset: headingCounterH2;
+  counter-reset: headingCounterH3;
+  counter-reset: headingCounterH4;
+}
+.main-content .section.level1 {
+  counter-increment: headingCounterH1;
+}
+.main-content .section h1 {
+  counter-reset: headingCounterH2;
+  counter-reset: headingCounterH3;
+  counter-reset: headingCounterH4;
+}
+.main-content .section.level1 h1::before {
+  content: counter(headingCounterH1);
+  padding-right: 0.6em;
+}
+.main-content .section.level2 {
+  counter-increment: headingCounterH2;
+}
+.main-content .section h2 {
+  counter-reset: headingCounterH3;
+  counter-reset: headingCounterH4;
+}
+.main-content .section.level2 h2::before {
+  content: counter(headingCounterH1) "." counter(headingCounterH2);
+  padding-right: 0.6em;
+}
+.main-content .section.level3 {
+  counter-increment: headingCounterH3;
+  counter-reset: headingCounterH4;
+}
+.main-content .section.level3 h3::before {
+  content: counter(headingCounterH1) "." counter(headingCounterH2) "." counter(headingCounterH3);
+  padding-right: 0.6em;
+}
+.main-content .section.level4 {
+  counter-increment: headingCounterH4;
+}
+.main-content .section.level4 h4::before {
+  content: counter(headingCounterH1) "." counter(headingCounterH2) "." counter(headingCounterH3) "." counter(headingCounterH4);
+  padding-right: 0.6em;
+}
